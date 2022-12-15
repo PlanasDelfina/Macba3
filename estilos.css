@@ -1,0 +1,403 @@
+body{
+    background: rgb(199, 179, 179);
+}
+.container-fluid{
+    padding-bottom: 30px;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.btn-outline-success{
+    background-color: #c07e91;
+}
+.btn-outline-success:hover{
+    background-color: #c07e91;
+}
+
+.btn-rosa{
+    font-family: 'Raleway';
+    background-color: #c07e91;
+    color: white;
+}
+
+/* ________HEADER__________ */
+
+.burger:hover{
+    background: gainsboro;
+}
+
+.botones{
+    display: flex;
+    gap: 10px;
+}
+
+.macba__logo{
+    width: 150px;
+    height: 120px;
+}
+
+.display-1{
+    font-family: 'Cinzel';
+}
+.display-2{
+    font-family: 'Cinzel';
+    font-size: 45px;
+}
+
+.lead{
+    font-family: 'Raleway';
+    font-size: 20px;
+}
+
+
+/* ________RESPONSIVE__________ */
+@media screen and (max-width:992px) {
+    
+    .botones{
+        flex-direction: column;
+        position: relative;
+        left: -85%;
+        top: -350px;
+        transition: .8s;
+    }
+    .burger:hover{
+        background: #8d8d8d;
+    }
+
+    .botones--show{
+        top: 0px;
+    }
+    .burger{
+        background: gainsboro;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+    .macba__logo{
+        position: relative;
+        left: 82%;
+        top: -80px;
+    }
+
+    .aboutus__container{
+        text-align: center;
+        width: 90% !important;
+        margin: 0px auto 80px auto!important;
+    }
+
+    
+    .horarios__container{
+        flex-direction: column;
+        margin: 0 0 100px 0;
+    }
+    .cont{
+        padding: 30px;
+        box-sizing: border-box;
+        
+    }
+
+    .events{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .galery__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_container{
+        margin: 0px auto 10px auto!important;
+        padding: 70px !important;
+        height: 500px !important;
+        text-align: center;
+        width: 90%;
+        ;
+    }
+    .logos__container{
+        flex-direction: column;
+        margin: 0 0 1px 0 !important;
+    }
+    .insta, .gmail, .callings{
+        margin: 15px 0;
+    }
+
+}
+
+@media screen and (max-width:682px) {
+    .macba__logo{
+        position: relative;
+        left: 70%;
+        top: -80px;
+    }
+    .botones{
+        left: -75%;
+    }
+}
+@media screen and (max-width:562px) {
+    .botones{
+        left: -70%;
+    }
+}
+
+
+/* ________ABOUT US__________ */
+.aboutus__container{
+    margin: 40px 0;
+    background-size: 100%;
+    background: url(cuadros/fondo2.png) no-repeat center;
+    width: 1700px;
+    border-radius: 20px;
+
+}
+
+/* ________GALERY__________ */
+.container__galeria{
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+}
+.container__galeria h3{
+    font-family: 'Raleway';
+    font-size: 17px;
+    color: #8b5a61;
+}
+
+.card-group{
+    padding: 10px;
+}
+.container__galeria h2{
+    font-family: 'Cinzel';
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.galeria1{
+    margin-top: 35px;
+}
+.galeria1 img{
+    height: 100%;
+}
+
+.galeria2 img{
+    height: 100%;
+}
+
+.galeria3 img{
+    height: 100%;
+}
+
+.galery__container{
+    display: none;
+}
+
+/* ________HORARIOS__________ */
+.horarios__container{
+    width: 100%;
+    height: 500px;
+    margin: 30px 0 200px 0;
+    display: flex;
+    gap: 20px;    
+}
+
+.dias__container, .entrada__container, .ubi__container{
+    background: #c07f92;
+    background-image: url(img/trama.png);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.input__horarios{
+    background-color: #8b5a61;
+    width: 90px;
+    padding: 8px;
+    margin: 10px auto;
+    border-radius: 25px;
+    border-color: transparent;
+    
+}
+.input__horarios:hover{
+    filter: brightness(0.9);
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.entrada__container input{
+    width: 100px;
+}
+
+
+/* ________EVENTS__________ */
+.container__eventos{
+    padding: 20px;
+}
+.container__eventos .card{
+    background: #bc9983;
+    color:rgb(255, 255, 255);
+
+}
+.container__eventos h2{
+    font-family: 'Cinzel';
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.container__eventos h3{
+    font-family: 'Cinzel';
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.container__eventos p{
+    font-family: 'Ralewey';
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+.events img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    transition: .3s;
+
+}
+
+.events img:hover{
+    filter: brightness(0.9);
+    z-index: 1;
+}
+
+.galery__container{
+    display: none;
+}
+
+/* ________HORARIOS__________ */
+
+.horarios__container{
+    font-family: 'Raleway';
+}
+.container_mapa{
+    background-image: url(https://www.google.com.ar/maps/place/MACBA+-+Museo+de+Arte+Contempor%C3%A1neo+de+Buenos+Aires/@-34.6219018,-58.3723997,17z/data=!3m1!4b1!4m5!3m4!1s0x95a334d2e0936d0f:0xe15768b6f49dbb52!8m2!3d-34.6219018!4d-58.370211);
+}
+.donde-estamos{
+    font-family: 'Cinzel';
+    color: white;
+    margin: 20px;
+    margin-left: auto;
+}
+.donde-estamos h2{
+    margin: 20px;
+}
+.texto-mapa{
+    font-size:25px;
+    font-family: 'Raleway';
+    color: white;
+    background-color: #bc9983;
+    border-radius: 20px;   
+}
+
+.textoo{
+    justify-content: space-around;
+    align-content: center;
+}
+#mapa{
+    background-color: #8b5a61;
+    padding: 25px;
+}
+
+/* ________VIDEOS__________ */
+
+
+.video_macba{
+    width: 80%;
+    height: 100%;
+    background-color: #bc9983;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-image: url(https://www.youtube.com/embed/rOwk7GzXmwA);
+}
+.video_macba p{
+    font-family: 'Raleway';
+    font-size: 17px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+}
+.video_macba h2{
+    font-family: 'Cinzel';
+    font-size: 50px;
+}
+
+.container__galeria p{
+    font-family: 'Raleway';
+    margin-top: 10px;
+}
+
+
+/*__________CONTACTO__________*/
+
+.contact_container{
+    font-family: 'Raleway';
+    text-align: center;
+    background: #8b5a61;
+    background-image: url(img/trama.png);
+    height: 500px;
+    border-radius: 10px;
+    color: white;
+    width: 80%;
+    margin: auto;
+    }
+
+.logos__container{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 15% 0 0 0;
+}
+
+.img-container{
+    width: 70px;
+    height: 70px;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+}
+
+.insta, .gmail, .callings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*__________footer__________*/
+
+.footer_inicio{
+    font-family: 'Raleway';
+    margin: 0px 0 0 0;
+    background: rgb(182, 119, 100);
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    
+}
